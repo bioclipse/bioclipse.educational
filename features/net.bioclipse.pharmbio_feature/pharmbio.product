@@ -136,6 +136,7 @@
       <feature id="net.bioclipse.statistics_feature" version="2.2.0.RC2"/>
       <feature id="net.bioclipse.latex_feature" version="2.2.0.RC2"/>
       <feature id="net.bioclipse.platform_feature" version="2.2.0.RC2"/>
+      <feature id="net.bioclipse.pharmbio_feature" version="1.0.0"/>
    </features>
 
 
