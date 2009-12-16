@@ -10,19 +10,36 @@
  ******************************************************************************/
 package net.bioclipse.pharmbio.comprepr.business;
 
+import net.bioclipse.cdk.business.CDKManager;
+import net.bioclipse.cdk.domain.ICDKMolecule;
+import net.bioclipse.core.business.BioclipseException;
+import net.bioclipse.core.domain.IMolecule;
 import net.bioclipse.managers.business.IBioclipseManager;
+import net.bioclipse.statistics.business.business.MatrixManager;
+import net.bioclipse.statistics.model.IMatrixResource;
 
-import org.apache.log4j.Logger;
+import org.openscience.cdk.graph.matrix.ConnectionMatrix;
+import org.openscience.cdk.interfaces.IAtomContainer;
 
 public class CompreprManager implements IBioclipseManager {
 
-    private static final Logger logger = Logger.getLogger(CompreprManager.class);
-
+    private CDKManager cdk = new CDKManager();
+    private MatrixManager matrix = new MatrixManager();
+    
     /**
      * Gives a short one word name of the manager used as variable name when
      * scripting.
      */
     public String getManagerName() {
         return "comprepr";
+    }
+
+    public IMatrixResource connectivityMatrix(IMolecule molecule)
+        throws BioclipseException {
+        ICDKMolecule cdkMol = cdk.asCDKMolecule(molecule);
+        IAtomContainer container = cdkMol.getAtomContainer();
+        
+        double[][] matrixVals = ConnectionMatrix.getMatrix(container);
+        return matrix.create(matrixVals);
     }
 }

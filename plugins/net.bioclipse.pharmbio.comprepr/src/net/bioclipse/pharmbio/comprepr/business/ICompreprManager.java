@@ -11,11 +11,24 @@
 package net.bioclipse.pharmbio.comprepr.business;
 
 import net.bioclipse.core.PublishedClass;
+import net.bioclipse.core.PublishedMethod;
+import net.bioclipse.core.Recorded;
+import net.bioclipse.core.domain.IMolecule;
 import net.bioclipse.managers.business.IBioclipseManager;
+import net.bioclipse.statistics.model.IMatrixResource;
 
 @PublishedClass(
-    value="TODO: Describe the manager here."
+    value="Manager with functionality specific for the Computer " +
+    		"Representation chapter in the Pharmaceutical " +
+    		"Bioinformatics book."
 )
 public interface ICompreprManager extends IBioclipseManager {
 
+    @Recorded
+    @PublishedMethod(methodSummary=
+        "Creates a connectivity matrix for a IMolecule.",
+        params="IMolecule molecule"
+    )
+    public IMatrixResource connectivityMatrix(IMolecule molecule);
+    
 }
