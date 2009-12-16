@@ -5,7 +5,8 @@ Bundle-SymbolicName: net.bioclipse.pharmbio.comprepr; singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: net.bioclipse.pharmbio.comprepr.Activator
 Bundle-Vendor: Egon Willighagen
-Export-Package: net.bioclipse.pharmbio.comprepr, net.bioclipse.pharmbio.comprepr.business
+Export-Package: net.bioclipse.pharmbio.comprepr,
+ net.bioclipse.pharmbio.comprepr.business
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  net.bioclipse.core,
