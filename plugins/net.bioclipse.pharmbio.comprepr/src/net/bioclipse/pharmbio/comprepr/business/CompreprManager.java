@@ -19,7 +19,9 @@ import net.bioclipse.statistics.business.business.MatrixManager;
 import net.bioclipse.statistics.model.IMatrixResource;
 
 import org.openscience.cdk.graph.matrix.ConnectionMatrix;
+import org.openscience.cdk.interfaces.IAtom;
 import org.openscience.cdk.interfaces.IAtomContainer;
+import org.openscience.cdk.tools.IDCreator;
 
 public class CompreprManager implements IBioclipseManager {
 
@@ -40,6 +42,24 @@ public class CompreprManager implements IBioclipseManager {
         IAtomContainer container = cdkMol.getAtomContainer();
         
         double[][] matrixVals = ConnectionMatrix.getMatrix(container);
-        return matrix.create(matrixVals);
+        IMatrixResource connMatrix = matrix.create(matrixVals);
+        int atomCount = 1;
+        for (IAtom atom : container.atoms()) {
+            String label = atom.getID();
+            if (label == null) label = "";
+            connMatrix.setColumnName(atomCount, label);
+            connMatrix.setRowName(atomCount, label);
+            atomCount++;
+        }
+
+        return connMatrix;
+    }
+
+    public IMolecule createIdentifiers(IMolecule molecule)
+        throws BioclipseException {
+        ICDKMolecule cdkMol = cdk.asCDKMolecule(molecule);
+        IAtomContainer container = cdkMol.getAtomContainer();
+        IDCreator.createIDs(container);
+        return cdkMol;
     }
 }

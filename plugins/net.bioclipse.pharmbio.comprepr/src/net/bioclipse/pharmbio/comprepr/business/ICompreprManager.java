@@ -31,4 +31,11 @@ public interface ICompreprManager extends IBioclipseManager {
     )
     public IMatrixResource connectivityMatrix(IMolecule molecule);
     
+    @Recorded
+    @PublishedMethod(methodSummary=
+        "Creates CML-style atom and bond identifiers.",
+        params="IMolecule molecule"
+    )
+    public IMolecule createIdentifiers(IMolecule molecule);
+    
 }
