@@ -18,12 +18,11 @@
    </license>
 
    <includes
-         id="net.bioclipse.opentox_feature"
+         id="net.bioclipse.pharmbio_feature"
          version="0.0.0"/>
 
-   <requires>
-      <import feature="net.bioclipse.pharmbio_feature" version="1.0.0"/>
-      <import feature="net.bioclipse.pharmbio.comprepr_feature" version="1.0.0"/>
-   </requires>
+   <includes
+         id="net.bioclipse.pharmbio.comprepr_feature"
+         version="0.0.0"/>
 
 </feature>
