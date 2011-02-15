@@ -25,4 +25,8 @@
          id="net.bioclipse.pharmbio.comprepr_feature"
          version="0.0.0"/>
 
+   <requires>
+      <import feature="net.bioclipse.statistics_feature" version="2.4.0.20100709"/>
+   </requires>
+
 </feature>
