@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Pharmaceutical Bioinformatics - Computer Representation
 Bundle-SymbolicName: net.bioclipse.pharmbio.comprepr; singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 1.1.0.qualifier
 Bundle-Activator: net.bioclipse.pharmbio.comprepr.Activator
 Bundle-Vendor: Egon Willighagen
 Export-Package: net.bioclipse.pharmbio.comprepr,
