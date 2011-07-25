@@ -5,8 +5,7 @@
  	<wizard
         category="net.bioclipse.data"
         class="net.bioclipse.data.wizards.NewDataProjectWizard"
-        icon="icons/bologo16.png"
-        id="net.bioclipse.data.drugbank.wizards.NewBlueObeliskDataProjectWizard"
+        id="net.bioclipse.pharmbio.data.semweb.wizards.NewDataProjectWizard"
         name="Data for Introduction to Pharmaceutial Bioinformatics"
         project="true">
      <description>
@@ -24,8 +23,7 @@
       	name="Semantic Web Chapter"
       	description="Semantic Web Chapter"
       	location="data"
-      	wizard="net.bioclipse.data.drugbank.wizards.NewBlueObeliskDataProjectWizard"
-  	    icon="icons/bologo16.png"/>
+      	wizard="net.bioclipse.pharmbio.data.semweb.wizards.NewDataProjectWizard"/>
   </extension>
 
 

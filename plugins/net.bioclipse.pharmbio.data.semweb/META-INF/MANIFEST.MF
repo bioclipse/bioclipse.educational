@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PharmBio Semantic Web Chapter Data
 Bundle-SymbolicName: net.bioclipse.pharmbio.data.semweb;singleton:=true
-Bundle-Version: 1.1.0
+Bundle-Version: 1.1.0.qualifier
 Bundle-Activator: net.bioclipse.pharmbio.data.semweb.Activator
 Bundle-Vendor: The Bioclipse Team
 Require-Bundle: org.eclipse.ui,
