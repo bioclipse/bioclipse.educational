@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension
+      point = "org.eclipse.ui.newWizards">
+ 	<wizard
+        category="net.bioclipse.data"
+        class="net.bioclipse.data.wizards.NewDataProjectWizard"
+        icon="icons/bologo16.png"
+        id="net.bioclipse.data.drugbank.wizards.NewBlueObeliskDataProjectWizard"
+        name="Data for Introduction to Pharmaceutial Bioinformatics"
+        project="true">
+     <description>
+        Install a Project with sample data set
+     </description>
+     <selection
+           class="org.eclipse.core.resources.IResource">
+     </selection>
+  </wizard>
+</extension>
+
+  <extension
+      point="net.bioclipse.data.install">
+      <folder 
+      	name="Semantic Web Chapter"
+      	description="Semantic Web Chapter"
+      	location="data"
+      	wizard="net.bioclipse.data.drugbank.wizards.NewBlueObeliskDataProjectWizard"
+  	    icon="icons/bologo16.png"/>
+  </extension>
+
+
+</plugin>
