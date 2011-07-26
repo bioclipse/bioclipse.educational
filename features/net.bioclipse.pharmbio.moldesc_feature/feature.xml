@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="net.bioclipse.pharmbio_feature"
-      label="Pharmaceutical Bioinformatics"
+      id="net.bioclipse.pharmbio.moldesc_feature"
+      label="Pharmaceutical Bioinformatics - Molecular Descriptors"
       version="1.1.0.qualifier"
       provider-name="Egon Willighagen">
 
@@ -17,16 +17,11 @@
       [Enter License Description here.]
    </license>
 
-   <includes
-         id="net.bioclipse.pharmbio.comprepr_feature"
-         version="0.0.0"/>
-
-   <includes
-         id="net.bioclipse.pharmbio.semweb_feature"
-         version="0.0.0"/>
-
-   <includes
-         id="net.bioclipse.pharmbio.moldesc_feature"
-         version="0.0.0"/>
+   <plugin
+         id="net.bioclipse.pharmbio.data.moldesc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>

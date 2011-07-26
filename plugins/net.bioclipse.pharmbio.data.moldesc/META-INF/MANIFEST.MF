@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PharmBio Molecular Descriptors Chapter Data
+Bundle-SymbolicName: net.bioclipse.pharmbio.data.moldesc;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Activator: net.bioclipse.pharmbio.data.moldesc.Activator
+Bundle-Vendor: The Bioclipse Team
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.bioclipse.core,
+ net.bioclipse.data,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
