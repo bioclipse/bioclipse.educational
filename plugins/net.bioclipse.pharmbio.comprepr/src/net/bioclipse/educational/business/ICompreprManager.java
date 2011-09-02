@@ -8,7 +8,7 @@
  *
  * Contact: http://www.bioclipse.net/
  ******************************************************************************/
-package net.bioclipse.pharmbio.comprepr.business;
+package net.bioclipse.educational.business;
 
 import net.bioclipse.core.PublishedClass;
 import net.bioclipse.core.PublishedMethod;

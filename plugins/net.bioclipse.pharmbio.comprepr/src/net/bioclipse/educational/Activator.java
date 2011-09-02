@@ -8,11 +8,11 @@
  *
  * Contact: http://www.bioclipse.net/
  ******************************************************************************/
-package net.bioclipse.pharmbio.comprepr;
+package net.bioclipse.educational;
 
-import net.bioclipse.pharmbio.comprepr.business.ICompreprManager;
-import net.bioclipse.pharmbio.comprepr.business.IJavaCompreprManager;
-import net.bioclipse.pharmbio.comprepr.business.IJavaScriptCompreprManager;
+import net.bioclipse.educational.business.ICompreprManager;
+import net.bioclipse.educational.business.IJavaCompreprManager;
+import net.bioclipse.educational.business.IJavaScriptCompreprManager;
 
 import org.apache.log4j.Logger;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

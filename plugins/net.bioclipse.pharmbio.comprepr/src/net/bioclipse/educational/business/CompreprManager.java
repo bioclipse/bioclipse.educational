@@ -8,7 +8,7 @@
  *
  * Contact: http://www.bioclipse.net/
  ******************************************************************************/
-package net.bioclipse.pharmbio.comprepr.business;
+package net.bioclipse.educational.business;
 
 import net.bioclipse.cdk.business.CDKManager;
 import net.bioclipse.cdk.domain.ICDKMolecule;
@@ -33,7 +33,7 @@ public class CompreprManager implements IBioclipseManager {
      * scripting.
      */
     public String getManagerName() {
-        return "comprepr";
+        return "edu";
     }
 
     public IMatrixResource connectivityMatrix(IMolecule molecule)

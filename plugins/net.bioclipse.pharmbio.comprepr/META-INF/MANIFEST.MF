@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Pharmaceutical Bioinformatics - Computer Representation
-Bundle-SymbolicName: net.bioclipse.pharmbio.comprepr; singleton:=true
-Bundle-Version: 1.1.0.qualifier
-Bundle-Activator: net.bioclipse.pharmbio.comprepr.Activator
+Bundle-Name: Bioclipse functionality targeted at education material.
+Bundle-SymbolicName: net.bioclipse.educational;singleton:=true
+Bundle-Version: 2.5.0.qualifier
+Bundle-Activator: net.bioclipse.educational.Activator
 Bundle-Vendor: Egon Willighagen
-Export-Package: net.bioclipse.pharmbio.comprepr,
- net.bioclipse.pharmbio.comprepr.business
+Export-Package: net.bioclipse.educational,
+ net.bioclipse.educational.business
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  net.bioclipse.core,

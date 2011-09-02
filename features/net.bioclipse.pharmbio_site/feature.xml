@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="net.bioclipse.pharmbio_site"
-      label="Bioclipse Pharmbio.org Update Site"
-      version="1.1.0.qualifier"
+      id="net.bioclipse.educational_site"
+      label="Bioclipse Educational Update Site"
+      version="2.5.0.qualifier"
       provider-name="The Bioclipse Team">
 
    <description url="http://www.example.com/description">
@@ -18,11 +18,7 @@
    </license>
 
    <includes
-         id="net.bioclipse.pharmbio_feature"
-         version="0.0.0"/>
-
-   <includes
-         id="net.bioclipse.pharmbio.comprepr_feature"
+         id="net.bioclipse.educational_feature"
          version="0.0.0"/>
 
    <requires>

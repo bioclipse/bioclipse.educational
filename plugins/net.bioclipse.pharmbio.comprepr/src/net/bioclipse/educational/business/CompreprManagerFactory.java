@@ -8,14 +8,14 @@
  *
  * Contact: http://www.bioclipse.net/
  ******************************************************************************/
-package net.bioclipse.pharmbio.comprepr.business;
+package net.bioclipse.educational.business;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IExecutableExtension;
 import org.eclipse.core.runtime.IExecutableExtensionFactory;
 
-import net.bioclipse.pharmbio.comprepr.Activator;
+import net.bioclipse.educational.Activator;
 
 /**
  * Factory used for giving the manager to extension points.

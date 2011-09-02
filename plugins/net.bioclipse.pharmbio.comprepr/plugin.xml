@@ -5,7 +5,7 @@
    <extension
          point="net.bioclipse.scripting.contribution">
       <scriptContribution
-            service="net.bioclipse.pharmbio.comprepr.business.CompreprManagerFactory"
+            service="net.bioclipse.educational.business.CompreprManagerFactory"
             id="net.bioclipse.pharmbio.comprepr.business.CompreprManager">
       </scriptContribution>
    </extension>

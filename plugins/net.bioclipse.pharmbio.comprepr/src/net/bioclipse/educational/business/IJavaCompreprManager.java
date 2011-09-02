@@ -8,7 +8,7 @@
  *
  * Contact: Bioclipse Project <http://www.bioclipse.net>
  ******************************************************************************/
-package net.bioclipse.pharmbio.comprepr.business;
+package net.bioclipse.educational.business;
 
 public interface IJavaCompreprManager extends ICompreprManager {
 
